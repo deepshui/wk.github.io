@@ -1,7 +1,8 @@
 # -------------------------------------------------------------------------------------
-# Front Matter Configuration
-# See: https://gohugo.io/getting-started/configuration/#configure-front-matter
+# Sitemap Configuration
+# See: https://gohugo.io/templates/sitemap-template/#configuration
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5

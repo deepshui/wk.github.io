@@ -173,14 +173,14 @@ disableThemeInject = false
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = "已运行"
-    value = "2025-07-20T20:01:01+08:00"
+    value = "" # e.g. "2025-7-18T16:15:22+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
-    powered = 3
-    copyright = 1
-    statistics = 4
-    visitor = 2
-    beian = 5
+    powered = 0
+    copyright = 0
+    statistics = 0
+    visitor = 0
+    beian = 0
 
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
@@ -557,31 +557,14 @@ disableThemeInject = false
   comment = []
   footer = []
   widgets = []
-  assets = [ "inject/cmpt-flyfish.html" ]
+  assets = []
   postFooterBefore = []
   postFooterAfter = []
-
-[languages]
-
-[languages.zh-cn]
-  languageCode = "zh-CN"
-  languageName = "简体中文"
-
-[params.autoTranslate]
-  enable = true
-  service = 'client.edge'
-  languages = ["english", "chinese_simplified", "chinese_traditional"]
-  ignoreID = []
-  ignoreClass = []
-  ignoreTag = []
-  detectLocalLanguage = false
-  cdn = ""
-  enterprise = false
-
-[params.flyfish]
-  enable = true
-  light = "rgb(0 119 190 / 10%)"
-  dark = "rgb(255 255 255 / 10%)"
+  [params]
+  [params.customPartials]
+    # ... other partials
+    assets = [ "inject/cmpt-flyfish.html" ]
+    # ... other partials
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
@@ -604,7 +587,7 @@ disableThemeInject = false
   # FixIt 0.3.10 | NEW whether to hide a page from RSS, Atom and JSON feed
   hiddenFromFeed = false
   # whether to enable twemoji
-  twemoji = true
+  twemoji = false
   # FixIt 0.2.18 | CHANGED whether to enable lightgallery
   # set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
   # set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
@@ -618,15 +601,15 @@ disableThemeInject = false
   # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
   # whether to show link to Raw Markdown content of the post
-  linkToMarkdown = false
+  linkToMarkdown = true
   # FixIt 0.3.0 | NEW whether to show link to view source code of the post
-  linkToSource = false
+  linkToSource = true
   # FixIt 0.3.0 | NEW whether to show link to edit the post
-  linkToEdit = false
+  linkToEdit = true
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
-  linkToReport = false
+  linkToReport = true
   # FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
-  pageStyle = "narrow"
+  pageStyle = "normal"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
   # If true, save the reading progress when closing the page.
   autoBookmark = false
@@ -641,7 +624,7 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
   collectionList = false
   # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-  collectionNavigation = true
+  collectionNavigation = false
 
   # FixIt 0.2.15 | NEW Repost config
   [page.repost]
@@ -733,7 +716,7 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = true
+    enable = false
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]
@@ -752,8 +735,8 @@ disableThemeInject = false
   # social share links in post page
   [page.share]
     enable = true
-    Twitter = false
-    Facebook = false
+    Twitter = true
+    Facebook = true
     Linkedin = false
     Whatsapp = false
     Pinterest = false
@@ -772,7 +755,7 @@ disableThemeInject = false
     Blogger = false
     Baidu = false
     Odnoklassniki = false
-    Evernote = true
+    Evernote = false
     Skype = false
     Trello = false
     Mix = false
@@ -930,7 +913,6 @@ disableThemeInject = false
       # located in "assets/"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
-      
   # Page SEO config
   [page.seo]
     # image URL

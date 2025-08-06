@@ -1,7 +1,8 @@
 # -------------------------------------------------------------------------------------
-# Front Matter Configuration
-# See: https://gohugo.io/getting-started/configuration/#configure-front-matter
+# Taxonomies Configuration
+# See: https://gohugo.io/content-management/taxonomies/#configure-taxonomies
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
+category = "categories"
+tag = "tags"
+collection = "collections"

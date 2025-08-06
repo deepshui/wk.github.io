@@ -3,5 +3,4 @@
 # See: https://gohugo.io/getting-started/configuration/#configure-front-matter
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
+lastmod = ["lastmod", ":git", ":fileModTime", ":defalut"]

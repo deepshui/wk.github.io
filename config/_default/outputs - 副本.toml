@@ -1,7 +1,6 @@
 # -------------------------------------------------------------------------------------
-# Front Matter Configuration
-# See: https://gohugo.io/getting-started/configuration/#configure-front-matter
+# Customizing Output Formats
+# See: https://gohugo.io/templates/output-formats/#customizing-output-formats
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
+_merge = "shadow"

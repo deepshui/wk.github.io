@@ -79,7 +79,7 @@ disableThemeInject = false
   # type of search engine ["algolia", "fuse"]
   type = "fuse"
   # max index length of the chunked content
-  contentLength = 4000
+  contentLength = 400
   # placeholder of the search bar
   placeholder = ""
   # max number of results length
@@ -557,31 +557,33 @@ disableThemeInject = false
   comment = []
   footer = []
   widgets = []
-  assets = [ "inject/cmpt-flyfish.html" ]
+  assets = []
   postFooterBefore = []
   postFooterAfter = []
-
 [languages]
 
 [languages.zh-cn]
-  languageCode = "zh-CN"
-  languageName = "简体中文"
+languageCode = "zh-CN"
+languageName = "简体中文"
 
 [params.autoTranslate]
-  enable = true
-  service = 'client.edge'
-  languages = ["english", "chinese_simplified", "chinese_traditional"]
-  ignoreID = []
-  ignoreClass = []
-  ignoreTag = []
-  detectLocalLanguage = false
-  cdn = ""
-  enterprise = false
+enable = true
+service = 'client.edge'
+languages = ["english", "chinese_simplified", "chinese_traditional"]
+ignoreID = []
+ignoreClass = []
+ignoreTag = []
+detectLocalLanguage = false
+cdn = ""
+enterprise = false
 
-[params.flyfish]
-  enable = true
-  light = "rgb(0 119 190 / 10%)"
-  dark = "rgb(255 255 255 / 10%)"
+
+  [params.customPartials]
+    # ... other partials
+    assets = [ "inject/cmpt-flyfish.html" ]
+    # ... other partials
+
+ 
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
@@ -625,7 +627,7 @@ disableThemeInject = false
   linkToEdit = false
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = false
-  # FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
+    # FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
   pageStyle = "narrow"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
   # If true, save the reading progress when closing the page.
@@ -939,3 +941,4 @@ disableThemeInject = false
     [page.seo.publisher]
       name = ""
       logoUrl = ""
+

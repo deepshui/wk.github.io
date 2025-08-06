@@ -1,7 +1,9 @@
 # -------------------------------------------------------------------------------------
-# Front Matter Configuration
-# See: https://gohugo.io/getting-started/configuration/#configure-front-matter
+# Privacy Configuration
+# See: https://gohugo.io/about/hugo-and-gdpr/
 # -------------------------------------------------------------------------------------
 
-lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
+[x]
+  enableDNT = true
+[youtube]
+  privacyEnhanced = true

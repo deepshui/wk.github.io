@@ -6,9 +6,9 @@
 # FixIt 0.2.15 | CHANGED FixIt theme version
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "weekone来自于周一这个梗"
+description = "This is my new Hugo FixIt site"
 # site keywords
-keywords = ["weekone", "周一"]
+keywords = ["Hugo", "FixIt"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -40,15 +40,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-  name = "weekone"
-  email = "a@weekone.com"
-  link = "https://weekone.cc"
-  avatar = "/images/avatar.jpg"
+  name = "Lruihao"
+  email = "1024@lruihao.cn"
+  link = "https://github.com/Lruihao"
+  avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
-  repo = "https://github.com/deepshui/we.github.io"
+  repo = ""
   branch = "main"
   # the content directory path relative to the root of the repository
   dir = "content"
@@ -59,7 +59,7 @@ disableThemeInject = false
 # App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
-  title = "weekone"
+  title = "Hugo FixIt Blog"
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
@@ -115,9 +115,9 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/logo.jpg"
+    logo = "/hugo-fixit-starter1/images/fixit.min.svg"
     # title name
-    name = "weekone"
+    name = ""
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -133,8 +133,8 @@ disableThemeInject = false
 
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
-  enable = true
-  sticky = true
+  enable = false
+  sticky = false
   showHome = false
   # FixIt 0.3.13 | NEW
   separator = "/"
@@ -155,7 +155,7 @@ disableThemeInject = false
   # whether to show the author
   author = true
   # Site creation year
-  since = 2025
+  since = 2021
   # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
@@ -169,18 +169,18 @@ disableThemeInject = false
     themeLogo = true
   # FixIt 0.2.17 | CHANGED Site creation time
   [footer.siteTime]
-    enable = true
+    enable = false
     animate = true
     icon = "fa-solid fa-heartbeat"
-    pre = "已运行"
-    value = "2025-07-20T20:01:01+08:00"
+    pre = ""
+    value = "" # e.g. "2021-12-18T16:15:22+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
-    powered = 3
-    copyright = 1
-    statistics = 4
-    visitor = 2
-    beian = 5
+    powered = 0
+    copyright = 0
+    statistics = 0
+    visitor = 0
+    beian = 0
 
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
@@ -225,7 +225,7 @@ disableThemeInject = false
 
 # FixIt 0.2.17 | NEW TagCloud config for tags page
 [tagcloud]
-  enable = true
+  enable = false
   min = 14 # Minimum font size in px
   max = 32 # Maximum font size in px
   peakCount = 10 # Maximum count of posts per tag
@@ -237,15 +237,15 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = ""
+    gravatarEmail = "xx@xx.com"
     # URL of avatar shown in home page
-    avatarURL = "/images/avatar.jpg"
+    avatarURL = ""
     # FixIt 0.2.17 | NEW identifier of avatar menu link
-    avatarMenu = "about"
+    avatarMenu = ""
     # title shown in home page (HTML format is supported)
-    title = "weekone"
+    title = ""
     # subtitle shown in home page (HTML format is supported)
-    subtitle = "来自周一这个梗"
+    subtitle = "This is my new Hugo FixIt site"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
@@ -327,7 +327,7 @@ disableThemeInject = false
   Ko-Fi = ""
   BuyMeaCoffee = ""
   Linktree = ""
-  QQ = "123456789"
+  QQ = ""
   QQGroup = "" # https://qun.qq.com/join.html
   Diaspora = ""
   CSDN = ""
@@ -346,14 +346,14 @@ disableThemeInject = false
   TikTok = ""
   Credly = ""
   Phone = ""
-  Email = "a@weekone.cc"
+  Email = ""
   RSS = true
   # custom social links like the following
   # [social.twitter]
-  #   id = ""
+  #   id = "lruihao"
   #   weight = 3
-  #   prefix = ""
-  #   Title = ""
+  #   prefix = "https://twitter.com/"
+  #   Title = "Twitter"
   #   [social.twitter.icon]
   #     class = "fa-brands fa-x-twitter fa-fw"
 
@@ -500,9 +500,8 @@ disableThemeInject = false
   # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
   enable = true
   # Gravatar host, default: "www.gravatar.com"
-  host = "cravatar.cn" # ["cravatar.cn", "gravatar.loli.net", ...]
-  style = "robohash" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
-  avatar = "/images/avatar.jpg" 
+  host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
+  style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
 # FixIt 0.2.16 | NEW Back to top
 [backToTop]
@@ -512,14 +511,14 @@ disableThemeInject = false
 
 # FixIt 0.2.16 | NEW Reading progress bar
 [readingProgress]
-  enable = true
+  enable = false
   # Available values: ["left", "right"]
   start = "left"
   # Available values: ["top", "bottom"]
   position = "top"
   reversed = false
-  light = "#8581dd"
-  dark = "#fff"
+  light = ""
+  dark = ""
   height = "2px"
 
 # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
@@ -557,31 +556,9 @@ disableThemeInject = false
   comment = []
   footer = []
   widgets = []
-  assets = [ "inject/cmpt-flyfish.html" ]
+  assets = []
   postFooterBefore = []
   postFooterAfter = []
-
-[languages]
-
-[languages.zh-cn]
-  languageCode = "zh-CN"
-  languageName = "简体中文"
-
-[params.autoTranslate]
-  enable = true
-  service = 'client.edge'
-  languages = ["english", "chinese_simplified", "chinese_traditional"]
-  ignoreID = []
-  ignoreClass = []
-  ignoreTag = []
-  detectLocalLanguage = false
-  cdn = ""
-  enterprise = false
-
-[params.flyfish]
-  enable = true
-  light = "rgb(0 119 190 / 10%)"
-  dark = "rgb(255 255 255 / 10%)"
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
@@ -604,7 +581,7 @@ disableThemeInject = false
   # FixIt 0.3.10 | NEW whether to hide a page from RSS, Atom and JSON feed
   hiddenFromFeed = false
   # whether to enable twemoji
-  twemoji = true
+  twemoji = false
   # FixIt 0.2.18 | CHANGED whether to enable lightgallery
   # set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
   # set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
@@ -618,15 +595,15 @@ disableThemeInject = false
   # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
   # whether to show link to Raw Markdown content of the post
-  linkToMarkdown = false
+  linkToMarkdown = true
   # FixIt 0.3.0 | NEW whether to show link to view source code of the post
-  linkToSource = false
+  linkToSource = true
   # FixIt 0.3.0 | NEW whether to show link to edit the post
-  linkToEdit = false
+  linkToEdit = true
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
-  linkToReport = false
+  linkToReport = true
   # FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
-  pageStyle = "narrow"
+  pageStyle = "normal"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
   # If true, save the reading progress when closing the page.
   autoBookmark = false
@@ -641,7 +618,7 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
   collectionList = false
   # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-  collectionNavigation = true
+  collectionNavigation = false
 
   # FixIt 0.2.15 | NEW Repost config
   [page.repost]
@@ -733,7 +710,7 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = true
+    enable = false
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]
@@ -752,8 +729,8 @@ disableThemeInject = false
   # social share links in post page
   [page.share]
     enable = true
-    Twitter = false
-    Facebook = false
+    Twitter = true
+    Facebook = true
     Linkedin = false
     Whatsapp = false
     Pinterest = false
@@ -772,7 +749,7 @@ disableThemeInject = false
     Blogger = false
     Baidu = false
     Odnoklassniki = false
-    Evernote = true
+    Evernote = false
     Skype = false
     Trello = false
     Mix = false
@@ -930,7 +907,6 @@ disableThemeInject = false
       # located in "assets/"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
-      
   # Page SEO config
   [page.seo]
     # image URL
